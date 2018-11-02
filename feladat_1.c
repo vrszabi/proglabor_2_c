@@ -3,8 +3,20 @@
 #include <fcntl.h>      // W-L  (O_CREAT | O_RDWR   miatt kell)
 #include <sys/stat.h>   // W-L  (S_IREAD | S_IWRITE miatt kell)
 #include <string.h>
+
+//1.
+//    Hozzon létre alacsony szintű fájlkezeléssel egy adat1.txt fájlt, 
+//    majd írja ki ebbe a fájlba a nevét és zárja le a fájlt! 
+//    A létrehozott adat1.txt-t nyissa meg, és olvassa ki a benne található információt! 
+//    Ha a visszaolvasott információ magánhangzó, akkor azt írja ki az adat2.txt-be, 
+//    ha mássalhangzó a visszaolvasott karakter, akkor azt írja az adat3.txt-be! 
+//    Mindkét esetben írja a fájl végére a lezárás előtti fájl méretét! 
+//    Ellenőrzésképpen olvassa vissza az adat2.txt-t és az adat3.txt tartalmát, 
+//    majd írja ki a képernyőre!
+
 int main()
 {
+
 int fileaz=-2;
 int fileaz_magan=-2;
 int fileaz_massal=-2;
