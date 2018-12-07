@@ -36,12 +36,12 @@ fgv1(){
         //
 
         if(c%10==7 && c/10%10==7){
-          printf("\n%d ",c);
+          printf("\n%d ",sorszam);
           hetes_szam_sorszama = sorszam;
 
         }
         sorszam++;
     }
     fclose(fileaz_magas);
-    printf("beirni: %d",(meret*1000000)+hetes_szam_sorszama);
+    printf("\nbeirni: %d",(meret*1000000)+hetes_szam_sorszama);
 }
