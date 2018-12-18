@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-int megszamol(char *p); // 01. a. megszamolja n meg e karaktereket a tömbben, pointeres
+int megszamol(char *p); // 01. a. megszamolja n meg e karaktereket a tÃ¶mbben, pointeres
 int neg_negyjegy(int *tomb[], int db); // 01. b. tombbol az elso negativ 4jegyu szamot
 
 int main()
@@ -11,19 +11,19 @@ int main()
     return 0;
 }
 
-megszamol(char *p) //itt adod át a tömböt pointerrel a függvénynek
+megszamol(char *p) //itt adod Ã¡t a tÃ¶mbÃ¶t pointerrel a fÃ¼ggvÃ©nynek
 {
     int e_n_szama = 0;
     while(*p)
     {
-        if(*p=='e'||*p=='n')    //és ez az amikor a tömb elemeire pointerrel hivatkozol
+        if(*p=='e'||*p=='n')    //Ã©s ez az amikor a tÃ¶mb elemeire pointerrel hivatkozol
         {
             e_n_szama++;
         }
         p++;
     }
-    int tomb1[]= {9350,1234,-157, -1999, 4444,-1564,-4897,4677,-1111}; //nem ugyanazokat a számokat irtam mint a feladatban, lényegtelen
-    neg_negyjegy(tomb1, 9); //bizony át kell adni a darabszámot is, mert int tipusu a tömb
+    int tomb1[]= {9350,1234,-157, -1999, 4444,-1564,-4897,4677,-1111}; //nem ugyanazokat a szÃ¡mokat irtam mint a feladatban, lÃ©nyegtelen
+    neg_negyjegy(tomb1, 9); //bizony Ã¡t kell adni a darabszÃ¡mot is, mert int tipusu a tÃ¶mb
 
     return e_n_szama;
 }
@@ -35,7 +35,7 @@ int neg_negyjegy(int *tomb[], int db)
     {
         int szam = 0;
         szam=*tomb;
-        if(szam<=1000)
+        if(szam<=-1000)
         {
             printf ("Az elso negativ 4jegyu szam: %d \n", szam);
             break;
