@@ -38,6 +38,7 @@ int neg_negyjegy(int *tomb[], int db)
         if(szam<=-1000)
         {
             printf ("Az elso negativ 4jegyu szam: %d \n", szam);
+            negyjegyu_negativ = szam; 
             break;
         }
         tomb++;
